@@ -13,8 +13,8 @@
     }
 
     if(!isset($metaTitle)) {
-        $metaTitle = 'A világon a legjobbak abban, amit csinálnak. De el is tudják magukat adni.';
-        $metaDesc = 'sportkarrier mellett nehéz énmárkát is építeni, de aki befektet, sokat nyerhet. A hosszan és következetes épített imázs jó üzlet. A Forbes friss listáján előre törtek a focisták, és egyre feljebb az új generáció.';
+        $metaTitle = 'Az 50 leggazdagabb magyar';
+        $metaDesc = 'Mészáros Lőrinc ezermilliárd fölött szárnyal. Tiborcz István duplázott, Gattyán György visszaesett. Jellinek Dániel bevásárolt, Jászai Gellért Elon Musknál járt. Wáberer György Cápa lett, Nagy Elek kamarai elnök. Egy új szereplő százmilliárddal debütál, és van, aki négy év – pereskedéssel kikényszerített - kihagyás után tér vissza. Mozgalmas év után 8,5 ezermilliárd forint vagyon összpontosul az ötven leggazdagabb magyar kezében.';
     }
 ?>
 

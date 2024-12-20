@@ -57,6 +57,26 @@ onMounted(() => {
     })
 })
 
+const changeSlideBasedOnSerial = () => {
+    if (slider && route.params.url) {
+        const selectedItem = filteredItemsStore.users.find(
+            (item) => item.url === route.params.url
+        );
+        
+        if (selectedItem) {
+            const index = filteredItemsStore.users.findIndex(
+                (item) => item.serial === selectedItem.serial
+            );
+            if (index !== -1) {
+                slider.slideTo(index);
+            }
+        }
+    }
+};
+
+watch(() => route.params.url, changeSlideBasedOnSerial);
+
+
 </script>
 
 <template>
@@ -159,8 +179,5 @@ onMounted(() => {
 .swiper-button-prev {
     left: -15px;
 }
-
-
-
 
 </style>

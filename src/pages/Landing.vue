@@ -28,7 +28,7 @@ onBeforeMount(async () => {
 <template>
 
     <div id="main" class="bg-[#F2F2F2] w-screen h-[100dvh] overflow-auto relative">
-        <div class="mx-auto container relative pb-[15px]">
+        <div class="mx-auto relative pb-[15px]">
             <div class="w-full xl:absolute top-4 left-0">
                 <headerArea :showForbesLogo="false" :showMagazine="true"/>
             </div>

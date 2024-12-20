@@ -158,9 +158,9 @@ const toggle = () => {
 
             <div class="w-[97%] 2xl:w-full max-w-[1588px] mx-auto relative">
 
-                <div class="relative mx-auto py-[24px] lg:py-[45px] px-[15px] mini:px-[20px]">
+                <div class="relative mx-auto pt-[20px] lg:pt-[5px] px-[15px] mini:px-[20px]">
 
-                    <div class="w-full relative flex flex-col items-center justify-center gap-y-[110px]">
+                    <div class="w-full relative flex flex-col items-center justify-center gap-[20px]">
 
                         <!-- center area start -->
                          
@@ -168,7 +168,7 @@ const toggle = () => {
 
                             <!-- previous button -->
                             <router-link :to="{ name: 'subpage', params: { url: previousPage().url } }"
-                                class="flex items-center justify-start absolute z-10 top-[150px] md:top-[180px] lg:top-[200px] 2xl:top-[224px] left-0 -translate-x-[45%] bg-white md:bg-transparent px-[13px] py-[10px]">
+                                class="flex items-center justify-start absolute z-10 top-[150px] md:top-[180px] lg:top-[200px] 2xl:top-[224px] left-0 bg-white md:bg-transparent px-[13px] py-[10px]">
                                 
                                 <svg class="w-[16.62px] h-25.78px] sm:w-[26px] sm:h-[38px]" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 26 38" fill="none">
                                 <path d="M22.2418 37.7462C22.7959 37.7584 23.3401 37.5977 23.7987 37.2864C24.2572 36.975 24.6074 36.5282 24.8004 36.0087C24.9934 35.4891 25.0198 34.9224 24.8758 34.3871C24.7319 33.8519 24.4247 33.375 23.997 33.0224L7.67931 19.0432L23.997 5.06902C24.2929 4.85159 24.5406 4.57555 24.7248 4.25793C24.9089 3.94032 25.0255 3.588 25.0673 3.22324C25.109 2.85847 25.075 2.4891 24.9673 2.1381C24.8596 1.78709 24.6806 1.462 24.4416 1.18337C24.2025 0.904743 23.9084 0.67873 23.5779 0.519001C23.2473 0.359276 22.8873 0.269562 22.5204 0.255405C22.1536 0.241253 21.7877 0.302791 21.4458 0.436573C21.1039 0.57035 20.7933 0.773281 20.5335 1.03266L1.85118 17.0172C1.5578 17.2676 1.32221 17.5783 1.16067 17.9286C0.999122 18.2788 0.91547 18.66 0.91547 19.0457C0.91547 19.4314 0.999122 19.8126 1.16067 20.1628C1.32221 20.5131 1.5578 20.8241 1.85118 21.0745L20.5335 37.0744C21.0054 37.4936 21.6107 37.7319 22.2418 37.7468L22.2418 37.7462Z" fill="#C7B276"/>
@@ -182,16 +182,11 @@ const toggle = () => {
                                 </Transition>
                                 <!-- subpageCenterEnd-->
 
-                                <!-- banner area -->
-                                <!-- <div class="xl:block hidden flex-shrink-0">
-                                    <verticalBanner />
-                                </div> -->
-
                             </div>
 
                             <!-- next button -->
                             <router-link :to="{ name: 'subpage', params: { url: nextPage().url } }"
-                                class="flex items-center justify-end absolute z-10 top-[150px] md:top-[180px] lg:top-[200px] 2xl:top-[224px] right-0 translate-x-[45%] bg-white md:bg-transparent px-[13px] py-[10px]">
+                                class="flex items-center justify-end absolute z-10 top-[150px] md:top-[180px] lg:top-[200px] 2xl:top-[224px] right-0 bg-white md:bg-transparent px-[13px] py-[10px]">
                                 <svg class="w-[16.62px] h-25.78px] sm:w-[26px] sm:h-[38px]" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 26 38" fill="none">
                                     <path d="M3.75819 0.253819C3.20405 0.241631 2.65988 0.40227 2.20133 0.71365C1.74278 1.02503 1.39265 1.47176 1.1996 1.99133C1.00655 2.5109 0.980185 3.07764 1.12417 3.61289C1.26815 4.14814 1.57532 4.62501 2.00298 4.97761L18.3207 18.9568L2.00298 32.931C1.70715 33.1484 1.45939 33.4245 1.27524 33.7421C1.09108 34.0597 0.974482 34.412 0.932751 34.7768C0.891019 35.1415 0.925052 35.5109 1.03272 35.8619C1.14038 36.2129 1.31936 36.538 1.55844 36.8166C1.79752 37.0953 2.09156 37.3213 2.42213 37.481C2.75271 37.6407 3.11271 37.7304 3.47958 37.7446C3.84645 37.7587 4.21229 37.6972 4.55419 37.5634C4.89609 37.4296 5.20669 37.2267 5.46653 36.9673L24.1488 20.9828C24.4422 20.7324 24.6778 20.4217 24.8393 20.0714C25.0009 19.7212 25.0845 19.34 25.0845 18.9543C25.0845 18.5686 25.0009 18.1874 24.8393 17.8372C24.6778 17.4869 24.4422 17.1759 24.1488 16.9255L5.46653 0.925571C4.99458 0.506378 4.38925 0.268056 3.75819 0.253204V0.253819Z" fill="#C7B276"/>
                                 </svg>
@@ -214,6 +209,7 @@ const toggle = () => {
                 </div>
 
             </div>
+
 
         </div>
         

@@ -61,8 +61,11 @@ onBeforeMount(async () => {
 
         <div class="font-bold mt-[12px] text-[10px] leading-[11px] lg:text-[12px] lg:leading-[18px] text-[#727272] text-center">
             Vezető szerkesztő: Gólya Ági<br>
-            Felelős szerkesztő: Zsiborás Gergő<br>
-            Írta és számolta: Bánáti Anna, Gólya Ági, Melis Dóra, Váradi Ibolya, Zsiborás Gergő
+            Szakmai vezető: Golovics Milán<br>
+            Számolta: Golovics Milán, Duzsik Virág, Földes Igor, Pelyhe Balázs<br>
+            Írta: Fekete Emese, Gólya Ági, Golovics Milán, Kacskovics Nándor, Kis Judit, Lits Benedek, Tóth-Biró Marianna, Vaszkó Iván, Zsiborás Gergő<br>
+            Illusztráció: Bethlen Júlia, Csuth Péter<br>
+            Temesvári Gergő
         </div>
     </div>
 

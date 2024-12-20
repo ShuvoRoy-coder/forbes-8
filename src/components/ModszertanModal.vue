@@ -36,7 +36,6 @@ watch(() => props.showPopup, () => {
                     leave-to-class="opacity-0"
                 >
                     <div v-if="showPopup" class="fixed inset-0 backdrop-blur bg-black/50 transition-opacity" aria-hidden="true" @click="() => { emits('closePopup') }">
-                        <!-- <div class="absolute inset-0 backdrop-blur bg-black/50 transition-opacity" aria-hidden="true" /> -->
                     </div>
                 </transition>
 
@@ -73,36 +72,46 @@ watch(() => props.showPopup, () => {
                             <div>
                                 <div>
                                     <b>
-                                        Mit mutat meg ez a lista?
+                                        Kik kerülnek fel a listára?
                                     </b>
                                 </div>
                                 <div class="mt-5">
-                                    Azt, hogy az elmúlt négy évben nemzetközi eredményeket elért, aktív magyar sportolók közül ki az, aki a leginkább tud olyan énmárkát építeni, amivel plusz bevételeket képes magának generálni - illetve azt, hogy ki az, akiben erre nagy a potenciál.
+                                    Az ötven leggazdagabb magyar között olyan magyar milliárdosok szerepelnek, akik meghatározó üzleti tevékenységet folytatnak Magyarországon, vagy akiket üzleti érdekeltségeik ide kötik. Módszertanunk szerint magyar az, akinek van magyar állampolgársága (a kettős állampolgárság nem kizáró ok), a magyarországi lakhely viszont nem feltétel. 
                                 </div>
                                 <div class="mt-5">
-                                    A módszertant a Deloitte tanácsadócég munkatársaival állítottuk össze, és a Sentione közösségimédia-adatelemző cég adatbázisát használtuk.
+                                    Az utóbbi évek gyakorlatától eltérően a testvérpárokat ettől az évtől kezdve külön kezeljük, akkor is, ha érdekeltségeik nagy része nagyjából egyenlően oszlik meg közöttük. Ennek oka, hogy a milliárdoslistán - eltérően a 100 legértékesebb magyar cég vagy a 25 legértékesebb családi cég listáktól - cégek helyett magánszemélyeket vizsgálunk.
                                 </div>
                                 <div class="mt-5">
                                     <b>
-                                        Milyen értékeket néztünk?
+                                        HOGYAN SZÁMOLTUNK?
                                     </b>
                                 </div>
                                 <div class="mt-5">
-                                    A sportolók neve mellett három érték szerepel: sport-index, közösségimédia-index, üzleti potenciál.
+                                    A társaságokat az amerikai Forbes módszertanát alapul véve értékeltük. Ahol lehetett, EBITDA-alapon számoltunk – leginkább ez alkalmas arra, hogy megmutassa a cégek pénztermelő képességét. A nemzetközi vállalatértékelési gyakorlat szerint az EBITDA-t felszoroztuk egy iparági szorzóval. Itt Aswath Damodaran, a New York University professzorának listáját használtuk kiindulásnak, de hazai cégértékelési szakemberekkel és régiós testvérlapjainkkal együtt a szorzókat a régióra, illetve a magyar piacra szabtuk, ahol ez szükséges volt. Az így kapott értékből levontuk a vállalat hosszú lejáratú kötelezettségeit, és hozzáadtuk a készpénzállományát.
                                 </div>
                                 <div class="mt-5">
-                                    <b>Sport-index:</b> itt az elmúlt olimpiád nemzetközi dobogós eredményeit vettük számításba klub és válogatott szinten (a vizsgált időszak: 2021. szeptember – 2024. május). Plusz pontot ért az olimpiai dobogó és az is, ha valakinek több aktív éve van még hátra (mert ez nagyobb hirdetői érték). Az így kapott értéket egy sportági szorzóval szoroztuk meg – ez utóbbit a Deloitte szakemberei állapították meg nekünk az adott sportágak pénztermelőképessége, gazdasági ereje alapján. Szorzók: labdarúgás – 10 pont; úszás, tenisz – 8; motorsport, kézilabda – 6; kosárlabda – 5; országúti kerékpár, atlétika – 4; vízilabda – 3; kardvívás – 2. (Itt a listán szereplő sportágak szorzói szerepelnek csak.)
+                                    A 2023-as lista óta a módszertant azzal frissítettük, hogy a legfrissebb EBITDA helyett az elmúlt három év EBITDA-jának átlaga alapján számoljuk ki a becsült cégértéket. Ennek oka, hogy több általunk megkérdezett M&A tanácsadó szerint az elmúlt időszak inflációs környezetében a piac jelenleg is így árazza a magyar vállalatokat, az utóbbi hónapokban minden potenciális felvásárló, ha ajánlatot tesz, az elmúlt évek EBITDA-jának átlaga alapján áraz.
                                 </div>
                                 <div class="mt-5">
-                                    <b>Közösségimédia-index:</b> Az index meghatározásához a SentiOne adatbázisát használtuk. A rendszer a sportolók elmúlt 12 hónapos elérését mérte a különböző platformokon (a Facebook és az Instagram mellett most először a TikTok-ot is vizsgáltuk), ezek összesítését vettük alapul, kiegészítve az elmúlt 12 hónap pozitív és semleges közösségi médiás megítélésének arányszámával, valamint a Meta felületein (Facebook és Instagram) mért engagement rate-el. Ezutóbbi leginkább azt mutatja meg, mennyire aktív egy követő tábor, a hirdetőknek ugyanis ez is egyre fontosabb. Ezekből egy kompozit mérőszámot képeztünk, ezek mentén rangsoroltunk és egy 1-100 ig terjedő skálára helyeztük a végeredményt – csakúgy mint  többi részérték esetében. 
+                                    Nem termelőcégek esetében (azaz például pénzügyi szolgáltatóknál, ingatlanfejlesztőknél) szintén az amerikai anyalap útmutatása alapján járunk el: itt a vállalkozásban felhalmozott értékből – leginkább az eszközökből – indulunk ki, és az összes kötelezettséget levonjuk.
                                 </div>
                                 <div class="mt-5">
-                                    <b>Üzleti potenciál - <span class="text-[12px]">szponzorok szavazatai:</span></b> A legnagyobb, sport területén aktív hirdetőket (és egy ügynökséget) arra kértünk, hogy egy 15-ös skálán pontozzák, mennyire mély és hosszú távú kapcsolatot építenének ki adott sportolókkal egy, a márka ismertségének növelését célzó kampányban. A sporteredmények alapján 30-asra szűkítettük a shortlistünket, erre szavazhattak a következő cégek: Biotech USA, Decathlon, Mito, SPAR, OTP, Szerencsejáték Zrt., Mol, Telekom. A „zsűrihez” csatlakozott a lista tanácsadó partnere, a Deloitte is.</div>
-                                <div class="mt-5">
-                                    Képek forrása
+                                    Szintén az amerikai Forbes módszertanát követve, valamint egyeztetve magyar M&A tanácsadókkal egységesen tíz százalékos likviditási diszkontot alkalmazunk a privát cégekre. Ennek az az oka, hogy ezek a társaságok kevésbé likvidek, mint a tőzsdei cégek, eladásuk az egyre inkább jellemző hatósági engedélyeztetési eljárások miatt költségesebb is.
                                 </div>
                                 <div class="mt-5">
-                                    Klubok, szövetségek hivatalos oldala, a sportolók közösségmédia-felületei, Hirling Bálint, Orbital Strangers és Sebestyén László (Forbes archív), Kovács Tamás, Illyés Tibor (MTI)
+                                    Az állami megrendeléseknek nagy mértékben kitett vagy állami koncessziókat tulajdonló cégeket eszközalapon, tehát jelentősen diszkontált árazás mellett értékeltük fel. Az állami kitettséget az elmúlt három év közbeszerzésen elnyert megbízásainak összege alapján vizsgáltuk. Ahol ez a legfrissebb éves árbevétel legalább nyolcvan százalékát elérte, ott nem tartottuk indokoltnak a piaci, EBITDA-alapú megközelítést, mivel a pénztermelő képesség nagyban függ az állammal kötött szerződésektől. Ezekben az esetekben az értékelés alapja, hogy a cégben meglévő eszközökből kivonjuk az összes kötelezettséget. Ugyanígy vizsgáltuk a tendergyőztesek alvállalkozóit is.
+                                </div>
+                                <div class="mt-5">
+                                    Az osztalékoknál levontuk az adókat, ahol tudtuk, felmértük a tulajdonos egyéb érdekeltségeinek finanszírozási igényét, illetve beszámítottuk az elmúlt évek osztalékainak egy részét is
+                                </div>
+
+                                <div class="mt-5">
+                                    <b>
+                                        MILYEN ADATOKAT HASZNÁLUNK? 
+                                    </b>
+                                </div>
+                                <div class="mt-5">
+                                    A munkánkat az Opten és a Dun & Bradstreet (2021-ig Bisnode) céginformáció-szolgáltatók, valamint az Ingatlan.com adatai és kimutatásai segítették, a cégértékelésben a Concorde MB Partners munkatársai adtak tanácsot. Jogi ügyekben a Társaság a Szabadságjogokért (TASZ) szakértői segítik a munkánkat. 
                                 </div>
                             </div>
                         </div>
